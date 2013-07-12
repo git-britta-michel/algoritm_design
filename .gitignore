@@ -35,7 +35,9 @@ nosetests.xml
 .pydevproject
 
 #files 
-.quick_sort_project/my_quick_sort.py
-.quick_sort_project/tools.py
-.quick_sort_project/programming_question2.py
-.quick_sort_project/solution.txt
+quick_sort_project/my_quick_sort.py
+quick_sort_project/tools.py
+quick_sort_project/programming_question2.py
+quick_sort_project/solution.txt
+quick_sort_project/test.txt
+quick_sort_project/__pycache__
