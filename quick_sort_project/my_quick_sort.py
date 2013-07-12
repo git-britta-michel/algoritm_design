@@ -1,5 +1,5 @@
 """
-       File : qs.py
+       File : my_quick_sort.py
      Author : Drew Verlee
        Date : 10.07.13.
       Email : drew.verlee@gmail.com

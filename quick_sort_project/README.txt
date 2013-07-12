@@ -1,3 +1,7 @@
+
+Obviously don't look at my_quick_sort.py or tools.py as those contain 
+implementations 
+
 Tests for quick sort and the functions that make up quick sort
 
 I suggest you keep the names function names as they are
