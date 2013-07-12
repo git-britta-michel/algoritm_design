@@ -1,4 +1,0 @@
-Solutions to programming question 2
-Question one: 162085
-Question two: 164123
-Question three: 138382

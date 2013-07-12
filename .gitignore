@@ -33,6 +33,7 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+.ropeproject
 
 #files 
 quick_sort_project/my_quick_sort.py
