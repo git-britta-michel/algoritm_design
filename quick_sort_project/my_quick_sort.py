@@ -6,11 +6,10 @@
      GitHub : https://github.com/Midnightcoffee/
 Description : quick_sort
 """
-import unittest
+from random import randrange as rr
 
-
-def quick_sort(A, pivot_pos=0):
-    """sorts an array, if no pivot_position supplied chooses the first
+def quick_sort(A, pivot_chooser=None):
+    """sorts an array, if no pivot_chooser supplied choose a random one
 
     :A: type, list.
     :returns: a sorted list
@@ -18,12 +17,20 @@ def quick_sort(A, pivot_pos=0):
     """
 
     if A == []: return [], 0
-    A[0],A[pivot_pos] = A[pivot_pos], A[0]
-    pivot = A[0]
+    if pivot_chooser == None:
+        pivot_pos = rr(len(A))
+    else:
+        try:
+            pivot_pos = pivot_chooser()
+        except:
+            pivot_pos = pivot_chooser(A)
+
+    A[0], A[pivot_pos] = A[pivot_pos], A[0]
+
     swaps = 0
     l, pivot, g = partition(A, 0, len(A))
-    lesser, lswaps = quick_sort(l, pivot_pos)
-    greater, gswaps = quick_sort(g, pivot_pos)
+    lesser, lswaps = quick_sort(l, pivot_chooser)
+    greater, gswaps = quick_sort(g, pivot_chooser)
     swaps = lswaps + gswaps + len(lesser) + len(greater)
     return lesser + pivot + greater, swaps
 
@@ -35,6 +42,7 @@ def partition(A, l, r):
     :returns: a partitioned list according the specifications from
     slide 8 of QuickSort: The partition Subroutine
     """
+
     if A == []: return []
     p = A[l]
     i = l + 1
@@ -44,9 +52,5 @@ def partition(A, l, r):
             A[j], A[i] = A[i], A[j]
             i += 1
         j +=1
-
     A[l], A[i-1] = A[i-1], A[l]
     return A[:i-1], [A[i-1]], A[i:]
-
-
-
