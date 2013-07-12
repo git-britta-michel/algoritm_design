@@ -33,3 +33,7 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+#files 
+.quick_sort_project/my_quick_sort
+.quick_sort_project/tools
