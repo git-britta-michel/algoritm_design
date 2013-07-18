@@ -1,0 +1,58 @@
+file contains a list rep of a undirected graph
+200 vertices labled 1 to 200
+v  neighbors
+6  7 9 ... 
+
+run the randombized contradction algorithm for the min cut problem to compute
+the min cut.
+
+HINT!: figure out an implementation of the edge ontracitions.
+
+
+
+cut into two parts
+undirected
+set a     set b
+edge ---   edge
+edge --- edge 
+
+so above we have two cuts
+
+
+directed
+set a     set b
+edge --->   edge
+edge --- edge 
+now one cut
+
+
+min cut: fewest number of crossing edges. allow parallel edges - --- 
+ 
+
+random contraction algorithm:
+random sampling,
+
+
+input: undirected graph G = (v, e)
+parelle edges allowed
+
+return compute a cut wit the fewest number of crossing edges (a min cut)
+
+while there are more than 2 vertices:
+    pick a remaining edge (u, v) uniformaly at randombized
+    merge (or "contract") u and v into a single vertex
+    remove self-loops
+    return at represented by final 2 vertices
+
+items:
+have      need
+file need graph
+want a graph like {v :set([n, n]}
+
+then
+graph     min cut? 
+
+
+tools needed
+file_to_graph
+
