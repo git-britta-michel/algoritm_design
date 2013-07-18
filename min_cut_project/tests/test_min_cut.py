@@ -2,7 +2,6 @@
        File : test_min_cut.py
      Author : Drew Verlee
        Date : 16.07.13.
-      Email : drew.verlee@gmail.com
      GitHub : https://github.com/Midnightcoffee/
 Description : test min cut
 """
